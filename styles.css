@@ -1,3 +1,7 @@
+html, body {
+    height:100%;
+    overflow: hidden;
+}
 html {
     background-color: rgb(176, 176, 176);
 }
@@ -7,69 +11,51 @@ h1{
     font-family: Arial;
     font-weight: bolder;
 }
+h5{
+    text-align: center;
+    margin-top: -6px;
+    font-family: arial;
+    font-size: 10px;
+    font-weight: 1;
+}
 .appList{
     display:flex;
     justify-content:center;
 
     /*to view div*/
-    border: solid 1px rgba(255, 2, 2, 0);
-    margin: 2px;
-
+    border: solid 1px rgba(241, 0, 0, 0);
 }
-.projectButton{
-    width: 300px;
-    height: 100px;
-    margin-left: 20px;
+.app{
+    border: solid 1px rgba(241, 0, 0, 0);
+}
+img {
+    height:60px
+}
+.projectCover{
+    background-color: rgb(202, 198, 194);
+    height:110px ;
+    width:110px ;
+    border-radius: 25px;
     border: none;
-    border-radius: 15px;
-    cursor:pointer;
-    font-size:15px;
-    font-family: Arial;
-    font-weight: bolder;
-    color:rgb(59, 59, 59)
+    margin: 10px;
+    cursor: pointer;
 }
-.projectButton:hover{
+.projectCover:hover{
     background-color: rgb(232, 232, 232);
 }
 a{
     color: rgba(240, 248, 255, 0);
 }
 @media (max-width: 600px) {
-    h1 {
-        font-size: 1rem;
-        color: rgb(0, 0, 0);
-    }
-
-    .projectButton {
-        font-size: 1.2rem;
-        padding: 10px 20px;
-        width: 90%; /* Keep buttons within screen width */
-    }
-    h1{
-        text-align: center;
-        color: rgb(92, 92, 92);
-        font-family: Arial;
-        font-weight: bolder;
-    }
-    .appList{
-        display:flex;
-        justify-content:center;
-    
-        /*to view div*/
-        border: solid 1px rgba(255, 2, 2, 0);
-        margin: 2px;
-    
-    }
-    .projectButton{
-        width: 200px;
-        height: 100px;
-        margin-left: 20px;
-        border: none;
-        border-radius: 15px;
-        cursor:pointer;
-        font-size:15px;
-        font-family: Arial;
-        font-weight: bolder;
-        color:rgb(59, 59, 59)
-    }
+  .projectCover{
+    height: 55px;
+    width: 55px;
+    border-radius: 15px;
+  }
+  img {
+    height:30px
+}
+h5{
+    font-size: 6px;
+}
 }
