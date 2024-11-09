@@ -50,7 +50,8 @@ img{
 }
 @media (max-width: 1000px) {
     h1 {
-        font-size: 2rem;
+        font-size: 3rem;
+        margin-bottom: 200px;
     }
 
     img {
@@ -62,6 +63,7 @@ img{
         font-size: 1.5rem;
         min-width: 80px;
         margin: 15px;
+        margin-bottom: 200px;
     }
 
     #playerDisplay, #computerDisplay {
@@ -69,10 +71,10 @@ img{
     }
 
     #resultDisplay {
-        font-size: 2.5rem;
+        font-size: 4rem;
     }
 
     .scoreDisplay {
-        font-size: 1rem;
+        font-size: 4rem;
     }
 }
