@@ -55,8 +55,8 @@ img{
     }
 
     img {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
 
     .choices button {
@@ -71,10 +71,10 @@ img{
     }
 
     #resultDisplay {
-        font-size: 4rem;
+        font-size: 2rem;
     }
 
     .scoreDisplay {
-        font-size: 4rem;
+        font-size: 2rem;
     }
 }
