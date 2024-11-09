@@ -48,7 +48,7 @@ img{
 .redText, #computerScoreDisplay{
     color:rgb(225, 68, 68);
 }
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
     h1 {
         font-size: 3rem;
         margin-bottom: 200px;
