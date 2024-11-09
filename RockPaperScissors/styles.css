@@ -51,13 +51,12 @@ img{
 @media (max-width: 1200px) {
     h1 {
         font-size: 3rem;
-        margin-bottom: 200px;
-        color:red;
+        margin-bottom: 400px;
     }
 
     img {
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
         margin:auto;
         padding: auto;
     }
@@ -70,14 +69,14 @@ img{
     }
 
     #playerDisplay, #computerDisplay {
-        font-size: 1.2rem;
+        font-size: 2.4rem;
     }
 
     #resultDisplay {
-        font-size: 2rem;
+        font-size: 4rem;
     }
 
     .scoreDisplay {
-        font-size: 2rem;
+        font-size: 4rem;
     }
 }
