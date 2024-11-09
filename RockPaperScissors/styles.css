@@ -1,0 +1,50 @@
+body {
+    font-family:arial;
+    font-weight: bold;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 72%);
+}
+h1{
+    font-size: 3.5rem;
+    color: hsl(0, 0%, 0%);
+}
+.choices{
+    margin-bottom:170px;
+}
+img{
+    width:100px;
+    height:100px;
+}
+.choices button{
+    font-size:7.5rem;
+    min-width: 160px;
+    margin: 50px 30px;
+    border-radius: 500px;
+    background-color: hsl(0, 0%, 61%);
+    cursor: pointer;
+    transition: background-color 0.5 ease;
+    border:none;
+}
+.choices button:hover{
+    background-color: hsl(0, 0%, 80%);
+}
+#playerDisplay, #computerDisplay{
+    margin-top: 5px;
+    font-size: 30px;
+}
+#resultDisplay {
+    font-size: 100px;
+    margin: 30px 0;
+}
+.scoreDisplay{
+    font-size: 20px;
+}
+.greenText, #playerScoreDisplay{
+    color:rgb(56, 131, 56)
+}
+.redText, #computerScoreDisplay{
+    color:rgb(225, 68, 68);
+}

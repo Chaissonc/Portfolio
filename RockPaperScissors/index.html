@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Rock   Paper   Scissors!</h1>
+
+    <div class="choices">
+    <button onclick="playGame('Rock')"><img src="https://clipart-library.com/img/1603226.png"></button>
+    <button onclick="playGame('Paper')"><img src="https://static.vecteezy.com/system/resources/thumbnails/022/219/336/small/white-torn-paper-isolated-on-a-transparent-background-png.png"></button>
+    <button onclick="playGame('Scissors')"><img src="https://clipart-library.com/img/1927846.png"></button>
+    </div>
+    
+    <div id="playerDisplay">You Picked:</div>
+    <div id="computerDisplay">Computer Picked: </div>
+    <div id="resultDisplay"></div>
+
+    <div class="scoreDisplay">Your Score: 
+        <span id="playerScoreDisplay">0</span>
+    </div>
+
+    <div class="scoreDisplay">Computer Score: 
+        <span id="computerScoreDisplay">0</span>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
