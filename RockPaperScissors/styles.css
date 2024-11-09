@@ -51,32 +51,29 @@ img{
 @media (max-width: 1200px) {
     h1 {
         font-size: 2.5rem;
-        margin-bottom:250px;
+        margin-bottom:100px;
     }
 
     img {
-        width: 150px;
-        height: 150px;
-        margin:auto;
-        padding: auto;
+        width: 100px;
+        height: 100px;
     }
 
     .choices button {
         font-size: 1rem;
         min-width: 80px;
-        margin: 15px;
-        margin-bottom: 200px;
+        margin: 3px;
     }
 
     #playerDisplay, #computerDisplay {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     #resultDisplay {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .scoreDisplay {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
