@@ -50,33 +50,33 @@ img{
 }
 @media (max-width: 1200px) {
     h1 {
-        font-size: 3rem;
-        margin-bottom: 400px;
+        font-size: 2.5rem;
+        margin-bottom:250px;
     }
 
     img {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         margin:auto;
         padding: auto;
     }
 
     .choices button {
-        font-size: 1.5rem;
+        font-size: 1rem;
         min-width: 80px;
         margin: 15px;
         margin-bottom: 200px;
     }
 
     #playerDisplay, #computerDisplay {
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
 
     #resultDisplay {
-        font-size: 4rem;
+        font-size: 2rem;
     }
 
     .scoreDisplay {
-        font-size: 4rem;
+        font-size: 2rem;
     }
 }
