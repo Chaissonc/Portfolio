@@ -1,0 +1,36 @@
+html {
+    background-color: rgb(176, 176, 176);
+}
+h1{
+    text-align: center;
+    color: rgb(92, 92, 92);
+    font-family: Arial;
+    font-weight: bolder;
+}
+.appList{
+    display:flex;
+    justify-content:center;
+
+    /*to view div*/
+    border: solid 1px rgba(255, 2, 2, 0);
+    margin: 2px;
+
+}
+.projectButton{
+    width: 200px;
+    height: 100px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor:pointer;
+    font-size:15px;
+    font-family: Arial;
+    font-weight: bolder;
+    color:rgb(59, 59, 59)
+}
+.projectButton:hover{
+    background-color: rgb(232, 232, 232);
+}
+a{
+    color: rgba(240, 248, 255, 0);
+}
