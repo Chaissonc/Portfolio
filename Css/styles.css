@@ -58,10 +58,10 @@ img:hover{
 /*Iphone Display*/
 @media (max-width: 600px) {
 .appButton{
-    height:140px;
-    width:150px;
+    height:110px;
+    width:120px;
 }
 img{
-    border-radius: 32px;;
+    border-radius: 25px;;
 }
 }
