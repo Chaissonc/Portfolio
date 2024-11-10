@@ -50,12 +50,14 @@ a{
 }
 @media (max-width: 600px) {
   .projectCover{
-    height: 55px;
-    width: 55px;
+    height: 80px;
+    width: 80px;
     border-radius: 15px;
   }
   img {
-    height:30px
+    height:100%;
+    border-radius: 15px;
+    margin-left: -5px;
 }
 h5{
     font-size: 6px;
