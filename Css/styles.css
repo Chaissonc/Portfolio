@@ -58,7 +58,7 @@ img:hover{
 /*Iphone Display*/
 @media (max-width: 600px) {
 .appButton{
-    height:110px;
+    height:100px;
     width:120px;
 }
 img{
