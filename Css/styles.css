@@ -29,7 +29,9 @@ h5{
     border: solid 1px rgba(241, 0, 0, 0);
 }
 img {
-    height:60px
+    height:100%;
+    border-radius: 25px;
+    margin-left: -5px;
 }
 .projectCover{
     background-color: rgb(202, 198, 194);
