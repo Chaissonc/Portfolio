@@ -1,10 +1,11 @@
 html, body {
     height:100%;
     overflow: hidden;
-}
-html {
     background-color: rgb(176, 176, 176);
 }
+
+
+/*typography*/
 h1{
     text-align: center;
     color: rgb(92, 92, 92);
@@ -13,53 +14,54 @@ h1{
 }
 h5{
     text-align: center;
-    margin-top: -6px;
+    margin-top: 0px;
     font-family: arial;
     font-size: 10px;
     font-weight: 1;
 }
+
+
+/*Divs*/
 .appHolder{
     display:flex;
     justify-content:center;
-
-    /*to view div*/
     border: solid 1px rgb(170, 255, 0);
 }
+
 .appDiv{
     border: solid 1px rgb(17, 0, 255);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/*Elements*/
+.appButton{
+    border:none;
+    background-color: rgba(240, 248, 255, 0);
+    height:190px;
+    width:200px;
+    border-radius: 50px;
+    cursor: pointer;
 }
 img {
     height:100%;
-    border-radius: 25px;
-    margin-left: -5px;
+    width:100%;
+    border-radius: 50px;
 }
-.projectCover,.img{
-    background-color: rgb(202, 198, 194);
-    height:110px ;
-    width:110px ;
-    border-radius: 25px;
-    border: none;
-    margin: 10px;
-    cursor: pointer;
-}
-.projectCover:hover{
+
+img:hover{
     background-color: rgb(232, 232, 232);
 }
-a{
-    color: rgba(240, 248, 255, 0);
-}
+
+
+/*Iphone Display*/
 @media (max-width: 600px) {
-  .projectCover,.img{
-    height: 80px;
-    width: 80px;
-    border-radius: 15px;
-  }
-  img {
-    height:100%;
-    border-radius: 15px;
-    margin-left: -5px;
+.appButton{
+    height:140px;
+    width:150px;
 }
-h5{
-    font-size: 6px;
+img{
+    border-radius: 32px;;
 }
 }
