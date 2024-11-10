@@ -56,8 +56,8 @@ a{
   }
   img {
     height:100%;
+    width:100%;
     border-radius: 15px;
-    margin-left: -5px;
 }
 h5{
     font-size: 6px;
