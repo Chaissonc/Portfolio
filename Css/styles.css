@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    font-family: Arial;
+    font-family: sans-serif;
 }
 
 html, body {
@@ -102,20 +102,18 @@ p{
 }
 /*SKILLS*/
 .skills{
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom:20px;
     border: solid 1px rgba(255, 0, 0, 0);
     justify-content: center;
 
 }
-.skills p{ /*'My Skills*/
+.skills p{
     margin-left: 10px;
     padding-bottom: 5px;
     font-size: 13px;
 }
-.skillsHolder a{
-    color:rgb(93, 93, 93);
-}
+
 .skillsHolder{
     border: solid 1px rgba(255, 0, 0, 0);
     display: flex;
@@ -124,14 +122,15 @@ p{
     width:95%;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    box-shadow:1px 2px 12px -5px #00000072;
-    border: 1px solid rgba(162, 162, 162, 0.781)
+    box-shadow:1px 2px 12px -5px #0000008e;
+    border: 1px solid rgba(162, 162, 162, 0.781);
+    color:rgb(75, 75, 75);
 }
 .skills img{
     height: 40px;
     width: 40px;
     -webkit-filter: drop-shadow(1px 1px 1px -1px #000000);
-  filter: drop-shadow(1px 1px 2px #040404);
+  filter: drop-shadow(1px 1px 1.5px #000000);
 }
 
 .cssDiv, .htmlDiv, .javaDiv, .cPlusPlusDiv, .pythonDiv{
@@ -139,9 +138,11 @@ p{
     font-size: 8px;
     font-weight: lighter;
 }
-
-.skills{
-    padding-top: 50px;
+.htmlName, .cssName, .javaName, .cPlusPlusName, .pythonName{
+    padding-top: 5px;
+}
+.apps{
+    padding-top: 20px;
     padding-bottom:20px;
     border: solid 1px rgba(0, 229, 255, 0);
     justify-content: center;
@@ -192,9 +193,12 @@ p{
     box-shadow:1px 2px 12px -5px #00000072; 
     border: 1px solid rgba(162, 162, 162, 0.781)
 }
-.unlvDiv{
+.unlvDiv,.freeCodeCampDiv{
     padding-top:15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
+
 .education img{
     height: 40px;
     width: 40px;
@@ -211,9 +215,10 @@ p{
     font-size: 10px;
 }
 .education h4{
-    font-size: 12px;
+    font-size: 10px;
 }
-.unlvspace{
+.space{
     margin-top: -5px;
+    padding-bottom: 10px;
 }
 }
