@@ -172,6 +172,10 @@ p{
     border-radius: 8px;
     box-shadow:1px 1px 5px -1px #000000; 
 }
+.apps a{
+    margin-top: 2px;
+    font-size: 7px;
+}
 .calculatorDiv,.rpcDiv,.urTaxDiv{
     padding: 10px 17px 10px 17px;
     font-size: 8px;
