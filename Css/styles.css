@@ -1,16 +1,15 @@
+/*Hello World! this is the CSS file that makes everything look 
+pretty on the page you were just on. everything is open 
+source so u can have a look!*/
 *{
     margin: 0;
     font-family: sans-serif;
 }
-
 html, body {
     height:100%;
     overflow: hidden;
     background-color: rgb(255, 255, 255);
 }
-
-
-/*typography*/
 h1{
     text-align: center;
     color: rgb(0, 0, 0);
@@ -26,14 +25,6 @@ h5{
 p{
     color:black;
 }
-
-/*Containers*/
-
-
-
-
-
-/*Elements*/
 .appButton{
     border:none;
     background-color: rgba(240, 248, 255, 0);
@@ -52,7 +43,6 @@ p{
 .appPage img:hover{
     background-color: rgb(232, 232, 232);
 }
-
 
 /*Iphone Display*/
 @media (max-width: 600px) {
@@ -100,7 +90,6 @@ p{
     display: flex;
     justify-content: center; 
 }
-/*SKILLS*/
 .skills{
     padding-top: 30px;
     padding-bottom:20px;
@@ -113,7 +102,6 @@ p{
     padding-bottom: 5px;
     font-size: 13px;
 }
-
 .skillsHolder{
     border: solid 1px rgba(255, 0, 0, 0);
     display: flex;
@@ -146,7 +134,6 @@ p{
     padding-bottom:20px;
     border: solid 1px rgba(0, 229, 255, 0);
     justify-content: center;
-
 }
 .apps p{ 
     margin-left: 10px;
@@ -198,7 +185,6 @@ p{
     padding-left: 15px;
     padding-right: 15px;
 }
-
 .education img{
     height: 40px;
     width: 40px;
