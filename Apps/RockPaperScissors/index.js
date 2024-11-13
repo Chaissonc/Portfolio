@@ -1,7 +1,3 @@
-/*Hello World! this is the JavaScript file that makes 
-everything work on the rock paper scissors game. 
-everything is open source so you can have a look!*/
-
 const choices = ["Rock","Paper","Scissors"];
 const playerDisplay = document.getElementById("playerDisplay");
 const computerDisplay = document.getElementById("computerDisplay");
