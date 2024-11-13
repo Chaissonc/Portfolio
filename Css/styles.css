@@ -9,7 +9,7 @@ source so u can have a look!*/
 html, body {
     height:100%;
     overflow: hidden;
-    background-image: url("Assets/background1.jpg");
+    background-image: url("../Assets/background1.jpg");
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
