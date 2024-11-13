@@ -8,62 +8,26 @@ html, body {
     height: 100%;
     width: 100%;
     background-image: url("../Assets/background1.jpg");
-    background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-h1{
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-weight: bolder;
-}
-h5{
-    text-align: center;
-    margin-top: 0px;
-    font-size: 9px;
-    font-weight: 1;
-    color: #ffffff;
-}
-p{
-    color:rgb(255, 255, 255);
-}
-.appButton{
-    border:none;
-    background-color: rgba(240, 248, 255, 0);
-    height:190px;
-    width:200px;
-    border-radius: 50px;
-    cursor: pointer;
-}
-.appPage img {
-    height:100%;
-    width:100%;
-    border-radius: 20px;
-    box-shadow:0px 3px 4px -3px #ffffff;
-}
 
-.appPage img:hover{
-    background-color: rgb(232, 232, 232);
-}
-
-/*Iphone Display*/
-@media (max-width: 600px) {
-    
+/*Computer View*/
 .pfpDiv{
     display: flex;
     justify-content: center;
 }
 
 .pfpDiv img {
-    height:100px;
-    width:100px;
+    height:150px;
+    width:150px;
     border-radius: 100%;
-    border: solid 4px rgba(255, 255, 255, 0);
-    outline: 1px solid rgba(255, 255, 255, 0.323);
-    backdrop-filter: blur(2px);
+    border: solid 8px rgba(255, 255, 255, 0);
+    outline: 1px solid rgba(255, 255, 255, 0.204);
+    backdrop-filter: blur(10px);
     box-shadow:1px 2px 12px -5px #0000008e;
 }
 .introDiv{
@@ -82,7 +46,7 @@ p{
     font-weight:bold
 }
 .bioDiv{
-    padding-top: 10px;
+    padding-top: 5px;
     display: flex;
     justify-content: center;
     border: solid 1px rgba(255, 0, 0, 0);
@@ -101,7 +65,7 @@ p{
     display: flex;
     justify-content: center;
     text-align: center;
-    width:95%;
+    width:50%;
     border-radius: 10px;
     box-shadow:1px 2px 12px -5px #0000008e;
     border: 1px solid rgba(255, 255, 255, 0.16);
@@ -114,91 +78,116 @@ p{
     display: flex;
     justify-content: center; 
 }
-.skills{
+.skills,.apps,.education{
     padding-top: 30px;
     padding-bottom:20px;
     border: solid 1px rgba(255, 0, 0, 0);
-    justify-content: center;
-
 }
-.skills p{
-    margin-left: 10px;
+.skills p,.apps p,.education p{
+    margin-left: 25%;
     padding-bottom: 5px;
     font-size: 13px;
 }
 
 .skills img{
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
     -webkit-filter: drop-shadow(1px 1px 1px -1px #000000);
   filter: drop-shadow(1px 1px 1.5px #000000);
 }
 
-.cssDiv, .htmlDiv, .javaDiv, .cPlusPlusDiv, .pythonDiv{
-    padding: 10px 15px 10px 15px;
+.cssDiv, .htmlDiv, .javaDiv, .cPlusPlusDiv, .pythonDiv,.calculatorDiv,.rpcDiv,.urTaxDiv{
+    padding: 10px 0px 10px 0px;
     font-size: 7px;
-    font-weight: lighter;
-    text-shadow: #000000 0px 1px 2px;
+    margin:auto;
 }
-.htmlName, .cssName, .javaName, .cPlusPlusName, .pythonName{
-    padding-top: 5px;
+.htmlName, .cssName, .javaName, .cPlusPlusName, .pythonName,.calculatorName,.rpcName,.urTaxName{
+    padding-top: 9px;
+    font-size: 7px;
 }
-.apps{
-    padding-top: 20px;
-    padding-bottom:20px;
-    border: solid 1px rgba(0, 229, 255, 0);
-    justify-content: center;
-}
-.apps p{ 
-    margin-left: 10px;
-    padding-bottom: 5px;
-    font-size: 13px;
-}
-.appsHolder a{
-    color:rgb(255, 255, 255);
-}
-
-.apps img{
-    height: 40px;
-    width: 40px;
+.apps img,.education img{
+    height: 60px;
+    width: 60px;
     border-radius: 8px;
     box-shadow:1px 1px 5px -1px #000000; 
 }
-.apps a{
-    margin-top: 2px;
-    font-size: 7px;
-}
-.calculatorDiv,.rpcDiv,.urTaxDiv{
-    padding: 10px 17px 10px 17px;
-    font-size: 8px;
-    font-weight: lighter;
-}
-
 .unlvDiv,.freeCodeCampDiv{
     padding-top:15px;
     padding-left: 15px;
     padding-right: 15px;
+    margin:auto;
 }
-.education img{
-    height: 40px;
-    width: 40px;
-    border-radius: 8px;
-    box-shadow:1px 1px 5px -1px #000000; 
-}
-.education p{
-    margin-top: 20px;
-    margin-left: 10px;
-    padding-bottom: 5px;
-    font-size: 13px;
-}
-.education a{
-    font-size: 10px;
-}
-.education h4{
+.education a,.education h4{
     font-size: 10px;
 }
 .space{
     margin-top: -5px;
     padding-bottom: 10px;
 }
+
+
+/*Iphone Display*/
+@media (max-width: 600px) {
+
+.pfpDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.pfpDiv img {
+    height:100px;
+    width:100px;
+    border-radius: 100%;
+    border: solid 3px rgba(255, 255, 255, 0);
+    outline: 1px solid rgba(255, 255, 255, 0.204);
+    backdrop-filter: blur(10px);
+    box-shadow:1px 2px 12px -5px #0000008e;
+}
+.bioDiv{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    border: solid 1px rgba(255, 0, 0, 0);
+}
+.bioDiv p{
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-weight:light;
+    font-size: 12px;
+    width:85%;
+    
+}
+.skills,.apps,.education{
+    padding-top: 20px;
+    padding-bottom:20px;
+}
+.skillsHolder,.appsHolder,.educationHolder{
+    border: solid 1px rgba(255, 0, 0, 0);
+    display: flex;
+    width:95%;
+    border-radius: 10px;
+    box-shadow:1px 2px 12px -5px #0000008e;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    padding-top: 0px;
+}
+.skills p,.apps p,.education p{
+    margin-left: 4%;
+
+}
+
+.skills img{
+    height: 40px;
+    width: 40px;
+}
+
+}
+.htmlName, .cssName, .javaName, .cPlusPlusName, .pythonName,.calculatorName,.rpcName,.urTaxName{
+    padding-top: 5px;
+}
+
+.apps img, .education img{
+    height: 40px;
+    width: 40px;
 }
