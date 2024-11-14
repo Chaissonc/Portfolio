@@ -96,12 +96,12 @@ html, body {
   filter: drop-shadow(1px 1px 1.5px #000000);
 }
 
-.cssDiv, .htmlDiv, .javaDiv, .cPlusPlusDiv, .pythonDiv,.calculatorDiv,.rpcDiv,.urTaxDiv{
+.cssDiv, .htmlDiv, .javaDiv, .cPlusPlusDiv, .pythonDiv,.calculatorDiv,.rpcDiv,.urTaxDiv,.toDoListDiv{
     padding: 10px 0px 10px 0px;
     font-size: 7px;
     margin:auto;
 }
-.htmlName, .cssName, .javaName, .cPlusPlusName, .pythonName,.calculatorName,.rpcName,.urTaxName{
+.htmlName, .cssName, .javaName, .cPlusPlusName, .pythonName,.calculatorName,.rpcName,.urTaxName,.toDoListName{
     padding-top: 9px;
     font-size: 7px;
 }
@@ -183,7 +183,7 @@ html, body {
 }
 
 }
-.htmlName, .cssName, .javaName, .cPlusPlusName, .pythonName,.calculatorName,.rpcName,.urTaxName{
+.htmlName, .cssName, .javaName, .cPlusPlusName, .pythonName,.calculatorName,.rpcName,.urTaxName,.toDoListName{
     padding-top: 5px;
 }
 
