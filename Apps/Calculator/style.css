@@ -1,3 +1,6 @@
+*{
+    touch-action: manipulation;
+}
 html, body {
     height:100%;
     overflow: hidden;
