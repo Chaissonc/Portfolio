@@ -1,1 +1,1 @@
-(chaissoncook.com)
+[chaissoncook.com](chaissoncook.com)
