@@ -1,51 +1,53 @@
-const choices = ["Rock","Paper","Scissors"];
-const playerDisplay = document.getElementById("playerDisplay");
-const computerDisplay = document.getElementById("computerDisplay");
-const resultDisplay = document.getElementById("resultDisplay");
-const playerScoreDisplay = document.getElementById("playerScoreDisplay");
-const computerScoreDisplay = document.getElementById("computerScoreDisplay");
-let playerScore =0;
-let computerScore =0;
+const choices = ["Rock", "Paper", "Scissors"];
+const emojiMap = { Rock: "✊", Paper: "🖐️", Scissors: "✌️" };
 
-function playGame(playerChoice){
+let playerScore = 0;
+let computerScore = 0;
 
-    const computerChoice = choices[Math.floor(Math.random()* 3)]
-    console.log(computerChoice)
-    let result ="";
+function playGame(playerChoice) {
+    const computerChoice = choices[Math.floor(Math.random() * 3)];
+    let result = "";
 
-    if(playerChoice== computerChoice){
-        result = "ITS A TIE"
-    }
-    else{
-        switch(playerChoice){
-            case "Rock":
-                result= (computerChoice === "Scissors") ? "YOU WIN!" : "YOU LOSE!"
-                break; 
-            case "Paper":
-                result= (computerChoice === "Rock") ? "YOU WIN!" : "YOU LOSE!"
-                break;
-            case "Scissors":
-                result= (computerChoice === "Paper") ? "YOU WIN!" : "YOU LOSE!"
-                break;
+    if (playerChoice === computerChoice) {
+        result = "It's a tie!";
+    } else {
+        switch (playerChoice) {
+            case "Rock":     result = computerChoice === "Scissors" ? "You win!" : "You lose!"; break;
+            case "Paper":    result = computerChoice === "Rock"     ? "You win!" : "You lose!"; break;
+            case "Scissors": result = computerChoice === "Paper"    ? "You win!" : "You lose!"; break;
         }
     }
 
-    playerDisplay.textContent = `You Picked: ${playerChoice}`
-    computerDisplay.textContent = `Computer Picked: ${computerChoice}`
-    resultDisplay.textContent = result;
+    document.getElementById("playerEmoji").textContent     = emojiMap[playerChoice];
+    document.getElementById("computerEmoji").textContent   = emojiMap[computerChoice];
+    document.getElementById("playerDisplay").textContent   = playerChoice;
+    document.getElementById("computerDisplay").textContent = computerChoice;
 
-    resultDisplay.classList.remove("greenText","redText");
+    const resultEl = document.getElementById("resultDisplay");
+    resultEl.textContent = result;
+    resultEl.className = "result-message";
 
-    switch(result){
-        case "YOU WIN!":
-            resultDisplay.classList.add("greenText")
-            playerScore++;
-            playerScoreDisplay.textContent = playerScore
-            break;
-        case "YOU LOSE!":
-            resultDisplay.classList.add("redText")
-            computerScore++;
-            computerScoreDisplay.textContent = computerScore
-            break;
+    if (result === "You win!") {
+        resultEl.classList.add("result-win");
+        document.getElementById("playerScoreDisplay").textContent = ++playerScore;
+    } else if (result === "You lose!") {
+        resultEl.classList.add("result-lose");
+        document.getElementById("computerScoreDisplay").textContent = ++computerScore;
+    } else {
+        resultEl.classList.add("result-tie");
     }
+}
+
+function resetScores() {
+    playerScore = 0;
+    computerScore = 0;
+    document.getElementById("playerScoreDisplay").textContent   = 0;
+    document.getElementById("computerScoreDisplay").textContent = 0;
+    document.getElementById("playerEmoji").textContent          = "?";
+    document.getElementById("computerEmoji").textContent        = "?";
+    document.getElementById("playerDisplay").textContent        = "Your pick";
+    document.getElementById("computerDisplay").textContent      = "Computer";
+    const resultEl = document.getElementById("resultDisplay");
+    resultEl.textContent = "Make your move";
+    resultEl.className = "result-message";
 }

@@ -1,92 +1,121 @@
-*{
-    touch-action: manipulation;
-}
-html, body {
-    height:100%;
-    overflow: hidden;
-}
-body {
+*, *::before, *::after {
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: hsl(0, 0%, 25%);
+    padding: 0;
+    box-sizing: border-box;
+    touch-action: manipulation;
+    -webkit-font-smoothing: antialiased;
 }
 
+:root {
+    --bg: #F5F0E8;
+    --glass-border: rgba(255, 255, 255, 0.9);
+    --accent: #4361EE;
+    --subtext: #6B7280;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Nav */
+.back-nav {
+    width: 100%;
+    padding: 16px 28px;
+    background: rgba(245, 240, 232, 0.78);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--glass-border);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.back-nav a {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--subtext);
+    text-decoration: none;
+}
+
+.back-nav a:hover { color: var(--accent); }
+
+/* Main */
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 24px;
+    width: 100%;
+}
+
+/* Calculator */
 #calculator {
-    font-family: Arial, sans-serif;
-    background-color: hsl(0, 0%, 15%);
-    border-radius: 15px;
-    max-width: 500px;
-    width: 80%;
+    background-color: hsl(0, 0%, 13%);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 360px;
     overflow: hidden;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
 }
 
 #display {
-    padding: 20px;
-    font-size: 3rem; /* Adjusted for smaller screens */
+    width: 100%;
+    padding: 24px 20px 16px;
+    font-size: 2.8rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
     text-align: right;
     border: none;
-    background-color: hsl(0, 0%, 20%);
+    background-color: hsl(0, 0%, 13%);
     color: white;
-    width: 100%;
-    box-sizing: border-box;
+    outline: none;
+    letter-spacing: -0.02em;
 }
+
+#display::placeholder { color: rgba(255,255,255,0.25); }
 
 #keys {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    padding: 20px;
+    gap: 1px;
+    background-color: hsl(0, 0%, 8%);
 }
 
 button {
-    width: 100%;
-    padding: 20px;
-    border-radius: 15px;
+    padding: 22px 0;
     border: none;
-    background-color: hsl(0, 0%, 30%);
+    background-color: hsl(0, 0%, 22%);
     color: white;
-    font-size: 2rem; /* Adjusted for smaller screens */
-    font-weight: bold;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
     cursor: pointer;
+    transition: background-color 0.1s;
 }
 
-button:hover {
-    background-color: hsl(0, 0%, 40%);
-}
+button:hover  { background-color: hsl(0, 0%, 30%); }
+button:active { background-color: hsl(0, 0%, 38%); }
 
-button:active {
-    background-color: hsl(0, 0%, 50%);
-}
+.operator-btn        { background-color: hsl(35, 100%, 50%); color: white; }
+.operator-btn:hover  { background-color: hsl(35, 100%, 60%); }
+.operator-btn:active { background-color: hsl(35, 100%, 70%); }
 
-.operator-btn {
-    background-color: hsl(35, 100%, 55%);
-}
+.equals-btn        { background-color: var(--accent); color: white; }
+.equals-btn:hover  { background-color: #3451D1; }
+.equals-btn:active { background-color: #2a42c0; }
 
-.operator-btn:hover {
-    background-color: hsl(35, 100%, 65%);
-}
+.zero-btn { grid-column: span 2; }
 
-.operator-btn:active {
-    background-color: hsl(35, 100%, 75%);
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 600px) {
-    #display {
-        font-size: 2rem;
-        padding: 15px;
-    }
-
-    #keys {
-        gap: 8px;
-    }
-
-    button {
-        font-size: 1.5rem;
-        padding: 15px;
-        border-radius: 10px;
-    }
+/* Mobile */
+@media (max-width: 420px) {
+    #display { font-size: 2.2rem; padding: 20px 16px 12px; }
+    button { padding: 18px 0; font-size: 1.2rem; }
 }
