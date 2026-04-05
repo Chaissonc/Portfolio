@@ -245,6 +245,68 @@ body {
     flex-shrink: 0;
 }
 
+/* ── Contact ──────────────────────────────────────────────────── */
+.contact-card {
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.contact-text {
+    font-size: 1rem;
+    color: var(--subtext);
+    line-height: 1.75;
+    max-width: 580px;
+}
+
+.contact-links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@media (max-width: 640px) {
+    .contact-card {
+        padding: 32px 24px;
+    }
+}
+
+/* ── Hamburger ────────────────────────────────────────────────── */
+.nav-hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    margin-left: auto;
+}
+
+.nav-hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 2px;
+    transition: transform 0.25s, opacity 0.2s;
+}
+
+.navbar.nav-open .nav-hamburger span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.navbar.nav-open .nav-hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar.nav-open .nav-hamburger span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
 /* ── Sections ─────────────────────────────────────────────────── */
 .section {
     padding: 88px 28px;
@@ -530,8 +592,33 @@ body {
         font-size: 2.2rem;
     }
 
+    .nav-hamburger {
+        display: flex;
+    }
+
     .nav-links {
         display: none;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        background: rgba(245, 240, 232, 0.97);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+        box-shadow: var(--shadow-md);
+        padding: 8px 0;
+    }
+
+    .navbar.nav-open .nav-links {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 14px 28px;
+        font-size: 1rem;
     }
 
     .section {

@@ -1,0 +1,29 @@
+# Chaisson Cook — Full Stack Developer
+
+Chaisson Cook is a Full Stack Developer based in Las Vegas, Nevada, currently pursuing a Bachelor of Arts in Computer Science at the University of Nevada, Las Vegas (UNLV). He builds responsive, accessible web applications using HTML, CSS, and JavaScript, with academic experience in Python and C++. His client work includes Pawfect Beauty, a Las Vegas dog grooming salon website featuring schema markup, online booking integration, and mobile-responsive design.
+
+## Contact
+
+- Email: chaissonrcook@gmail.com
+- Portfolio: https://chaissoncook.com
+- GitHub: https://github.com/Chaissonc
+- LinkedIn: https://www.linkedin.com/in/chaisson-cook-6b942b3b1
+
+## Skills
+
+- Front-End: HTML, CSS, JavaScript
+- Languages (academic): Python, C++
+- Other: Schema.org, SEO, responsive design, REST APIs
+
+## Projects
+
+- Pawfect Beauty (https://pawfectbeauty.com): Production website for a luxury dog grooming salon in Las Vegas. Features service pricing, online booking, local SEO schema markup, and mobile-first design. Live and actively used by the business.
+- urTax (https://chaissonc.github.io/Urtax/): Federal tax estimation web app — calculates estimated tax liability in real time based on income, filing status, and deductions. No account or backend required.
+- Rock Paper Scissors (https://chaissoncook.com/Apps/RockPaperScissors/): Browser-based game against a randomized computer opponent with live score tracking. Built with vanilla HTML, CSS, and JavaScript.
+- To-Do List (https://chaissoncook.com/Apps/ToDoList/): Task management app with full localStorage persistence. No backend or login required.
+- Weather App (https://chaissoncook.com/Apps/Weather/): Real-time weather lookup by city via the OpenWeather REST API, displaying temperature, humidity, wind speed, and conditions.
+
+## Education
+
+- Bachelor of Arts in Computer Science — University of Nevada, Las Vegas (currently pursuing)
+- Responsive Web Design Certification — freeCodeCamp (https://www.freecodecamp.org/certification/chaissoncook/responsive-web-design)
