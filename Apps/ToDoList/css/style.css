@@ -7,13 +7,16 @@
 }
 
 :root {
-    --bg: #F5F0E8;
-    --glass-border: rgba(255, 255, 255, 0.9);
-    --blue: #006dda;
-    --blue-hover: #2680da;
-    --blue-light: #e8f1fd;
-    --text: #111827;
-    --subtext: #6B7280;
+    --bg: #F5F5F7;
+    --card-bg: #FFFFFF;
+    --border: rgba(60, 60, 67, 0.13);
+    --border-card: rgba(0, 0, 0, 0.06);
+    --shadow-sm: 0 1px 4px rgba(0,0,0,0.07);
+    --blue: #007AFF;
+    --blue-hover: #0066D6;
+    --blue-light: rgba(0, 122, 255, 0.08);
+    --text: #1C1C1E;
+    --subtext: #6E6E73;
 }
 
 body {
@@ -28,9 +31,9 @@ body {
 .back-nav {
     width: 100%;
     padding: 16px 28px;
-    background: rgba(245, 240, 232, 0.78);
-    backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--glass-border);
+    background: rgba(245, 245, 247, 0.88);
+    backdrop-filter: saturate(180%) blur(20px);
+    border-bottom: 1px solid var(--border);
     position: sticky;
     top: 0;
     z-index: 10;
@@ -58,11 +61,10 @@ main {
 
 /* App card */
 .todo-app {
-    background: rgba(255, 255, 255, 0.72);
-    backdrop-filter: blur(20px);
-    border: 1px solid var(--glass-border);
+    background: var(--card-bg);
+    border: 1px solid var(--border-card);
     border-radius: 20px;
-    box-shadow: 0 8px 40px rgba(0, 109, 218, 0.1);
+    box-shadow: var(--shadow-sm);
     padding: 36px 32px;
     width: 100%;
     max-width: 520px;

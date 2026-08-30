@@ -1,6 +1,6 @@
-# Chaisson Cook — Full Stack Developer
+# Chaisson Cook — Software Engineer
 
-Chaisson Cook is a Full Stack Developer based in Las Vegas, Nevada, currently pursuing a Bachelor of Arts in Computer Science at the University of Nevada, Las Vegas (UNLV). He builds responsive, accessible web applications using HTML, CSS, and JavaScript, with academic experience in Python and C++. His client work includes Pawfect Beauty, a Las Vegas dog grooming salon website featuring schema markup, online booking integration, and mobile-responsive design.
+Chaisson Cook is a Software Engineer based in Las Vegas, Nevada, currently pursuing a Bachelor of Arts in Computer Science at the University of Nevada, Las Vegas (UNLV). He builds responsive, accessible web applications using HTML, CSS, and JavaScript, with academic experience in Python and C++. His client work includes Pawfect Beauty, a Las Vegas dog grooming salon website featuring schema markup, online booking integration, and mobile-responsive design.
 
 ## Contact
 
@@ -12,7 +12,8 @@ Chaisson Cook is a Full Stack Developer based in Las Vegas, Nevada, currently pu
 ## Skills
 
 - Front-End: HTML, CSS, JavaScript
-- Languages (academic): Python, C++
+- Languages (academic): Python, C++, x86 Assembly
+- Tools: Git, SQL, Figma, Supabase
 - Other: Schema.org, SEO, responsive design, REST APIs
 
 ## Projects

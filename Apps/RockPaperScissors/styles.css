@@ -6,12 +6,15 @@
 }
 
 :root {
-    --bg: #F5F0E8;
-    --glass: rgba(255, 255, 255, 0.68);
-    --glass-border: rgba(255, 255, 255, 0.9);
-    --accent: #4361EE;
-    --text: #111827;
-    --subtext: #6B7280;
+    --bg: #F5F5F7;
+    --card-bg: #FFFFFF;
+    --border: rgba(60, 60, 67, 0.13);
+    --border-card: rgba(0, 0, 0, 0.06);
+    --shadow-sm: 0 1px 4px rgba(0,0,0,0.07);
+    --shadow-md: 0 4px 18px rgba(0,0,0,0.09);
+    --accent: #007AFF;
+    --text: #1C1C1E;
+    --subtext: #6E6E73;
     --win: #16A34A;
     --lose: #DC2626;
     --tie: #D97706;
@@ -31,9 +34,9 @@ body {
 .back-nav {
     width: 100%;
     padding: 16px 28px;
-    background: rgba(245, 240, 232, 0.78);
-    backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--glass-border);
+    background: rgba(245, 245, 247, 0.88);
+    backdrop-filter: saturate(180%) blur(20px);
+    border-bottom: 1px solid var(--border);
 }
 
 .back-nav a {
@@ -73,13 +76,12 @@ main {
     color: var(--subtext);
 }
 
-/* Glass card base */
+/* Card base */
 .scoreboard, .arena {
-    background: var(--glass);
-    backdrop-filter: blur(20px);
-    border: 1px solid var(--glass-border);
+    background: var(--card-bg);
+    border: 1px solid var(--border-card);
     border-radius: 18px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+    box-shadow: var(--shadow-sm);
     width: 100%;
 }
 
@@ -192,13 +194,18 @@ main {
     align-items: center;
     gap: 10px;
     padding: 28px 16px;
-    background: var(--glass);
-    backdrop-filter: blur(16px);
-    border: 1px solid var(--glass-border);
+    background: var(--card-bg);
+    border: 1px solid var(--border-card);
     border-radius: 18px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+    box-shadow: var(--shadow-sm);
     cursor: pointer;
     font-family: 'Plus Jakarta Sans', sans-serif;
+    transition: box-shadow 0.15s, transform 0.15s;
+}
+
+.choice-btn:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
 }
 
 .choice-emoji { font-size: 3rem; }
