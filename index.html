@@ -26,8 +26,9 @@
     <meta name="twitter:description" content="Portfolio of Chaisson Cook, Software Engineer and UNLV Computer Science student based in Las Vegas, NV.">
     <meta name="twitter:image" content="https://chaissoncook.com/Assets/SocialImage.png">
 
+    <script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark')}catch(e){}</script>
     <link rel="stylesheet" href="Css/styles.css">
-    <link rel="preload" as="image" href="Assets/pfp-opt.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="Assets/pfp.webp" fetchpriority="high">
 
     <title>Chaisson Cook, Software Engineer | Las Vegas, NV</title>
     <link rel="icon" type="image/x-icon" href="Assets/favicon.ico">
@@ -52,14 +53,14 @@
       "@id": "https://chaissoncook.com/#person",
       "name": "Chaisson Cook",
       "url": "https://chaissoncook.com",
-      "image": "https://chaissoncook.com/Assets/pfp-opt.jpg",
+      "image": "https://chaissoncook.com/Assets/pfp.webp",
       "jobTitle": "Software Engineer",
       "description": "Software Engineer and UNLV Computer Science student based in Las Vegas, NV, building user-friendly web applications.",
       "sameAs": [
         "https://github.com/Chaissonc",
         "https://www.linkedin.com/in/chaisson-cook-6b942b3b1"
       ],
-      "knowsAbout": ["HTML", "CSS", "JavaScript", "C++", "Python", "Git", "SQL", "Figma", "Supabase", "x86 Assembly", "Full Stack Development", "Web Development"],
+      "knowsAbout": ["HTML", "CSS", "JavaScript", "C++", "Python", "Git", "PostgreSQL", "SQL", "Figma", "Supabase", "Node.js", "React", "Tailwind CSS", "Cloudflare", "x86 Assembly", "Full Stack Development", "Web Development"],
       "hasCredential": {
         "@type": "EducationalOccupationalCredential",
         "name": "Responsive Web Design Certification",
@@ -150,6 +151,10 @@
                     </svg>
                 </a>
             </div>
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode">
+                <svg class="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/></svg>
+                <svg class="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            </button>
             <button class="nav-hamburger" aria-label="Toggle navigation" onclick="document.querySelector('.navbar').classList.toggle('nav-open')">
                 <span></span>
                 <span></span>
@@ -162,7 +167,7 @@
     <section id="about" class="hero">
         <div class="hero-inner">
             <div class="hero-avatar-wrap">
-                <img src="Assets/pfp-opt.jpg" alt="Chaisson Cook" class="hero-avatar-img" width="148" height="148" fetchpriority="high">
+                <img src="Assets/pfp.webp" alt="Chaisson Cook" class="hero-avatar-img" width="148" height="148" fetchpriority="high">
             </div>
             <div class="hero-text-group">
                 <p class="hero-greeting">Hello, I'm</p>
@@ -220,7 +225,7 @@
                                 <p class="today-app-sub">Health &amp; Wellness · JavaScript</p>
                             </div>
                         </div>
-                        <a href="https://chaissonc.github.io/Sarx/" target="_blank" rel="noopener noreferrer" class="btn-open-light">Open</a>
+                        <a href="https://sarx.app/auth/" target="_blank" rel="noopener noreferrer" class="btn-open-light">Open</a>
                     </div>
                 </div>
 
@@ -250,6 +255,7 @@
                     <a href="https://github.com/Chaissonc" target="_blank" rel="noopener noreferrer" class="see-all-link">See All</a>
                 </div>
 
+                <div class="appstore-grid">
                 <a href="https://chaissonc.github.io/Urtax/" target="_blank" rel="noopener noreferrer" class="app-row">
                     <div class="app-icon-wrap">
                         <img src="Assets/urtaxicon.webp" alt="urtax" width="60" height="60" loading="lazy">
@@ -293,6 +299,7 @@
                     </div>
                     <span class="btn-open" aria-hidden="true">Open</span>
                 </a>
+                </div>
             </div>
         </div>
     </section>
@@ -331,20 +338,32 @@
                         <span>Git</span>
                     </div>
                     <div class="skill-chip">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                        </svg>
-                        <span>SQL</span>
+                        <img src="Assets/postgresql.webp" alt="PostgreSQL" width="24" height="24" loading="lazy">
+                        <span>PostgreSQL</span>
                     </div>
                     <div class="skill-chip">
-                        <img src="https://cdn.simpleicons.org/figma" alt="Figma" width="24" height="24" loading="lazy">
+                        <img src="Assets/figma.webp" alt="Figma" width="24" height="24" loading="lazy">
                         <span>Figma</span>
                     </div>
                     <div class="skill-chip">
-                        <img src="https://cdn.simpleicons.org/supabase" alt="Supabase" width="24" height="24" loading="lazy">
+                        <img src="Assets/supabase.webp" alt="Supabase" width="24" height="24" loading="lazy">
                         <span>Supabase</span>
+                    </div>
+                    <div class="skill-chip">
+                        <img src="Assets/nodejs.webp" alt="Node.js" width="24" height="24" loading="lazy">
+                        <span>Node.js</span>
+                    </div>
+                    <div class="skill-chip">
+                        <img src="Assets/react.webp" alt="React" width="24" height="24" loading="lazy">
+                        <span>React</span>
+                    </div>
+                    <div class="skill-chip">
+                        <img src="Assets/tailwind.webp" alt="Tailwind CSS" width="24" height="24" loading="lazy">
+                        <span>Tailwind CSS</span>
+                    </div>
+                    <div class="skill-chip">
+                        <img src="Assets/cloudflare.webp" alt="Cloudflare" width="24" height="24" loading="lazy">
+                        <span>Cloudflare</span>
                     </div>
                     <div class="skill-chip">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -442,6 +461,34 @@
         window.addEventListener('scroll', () => {
             navbar.classList.toggle('scrolled', window.scrollY > 8);
         }, { passive: true });
+
+        // Highlight the nav link for the section in view
+        const spyLinks = [...document.querySelectorAll('.nav-links a')];
+        const spy = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                spyLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + entry.target.id));
+            });
+        }, { rootMargin: '-45% 0px -50% 0px' });
+        spyLinks.forEach(l => { const s = document.querySelector(l.getAttribute('href')); if (s) spy.observe(s); });
+
+        // Light / dark toggle (light by default, remembered per browser)
+        const themeBtn = document.getElementById('themeToggle');
+        const root = document.documentElement;
+        function syncThemeLabel() {
+            const dark = root.getAttribute('data-theme') === 'dark';
+            themeBtn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+        }
+        syncThemeLabel();
+        themeBtn.addEventListener('click', () => {
+            const dark = root.getAttribute('data-theme') !== 'dark';
+            root.classList.add('theme-fading');
+            clearTimeout(window.__themeT);
+            window.__themeT = setTimeout(() => root.classList.remove('theme-fading'), 380);
+            if (dark) root.setAttribute('data-theme', 'dark'); else root.removeAttribute('data-theme');
+            try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch (e) {}
+            syncThemeLabel();
+        });
 
         // Close mobile menu on link click
         document.querySelectorAll('.nav-links a').forEach(link => {
